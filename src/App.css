@@ -7,7 +7,7 @@ a{
   font-family: 'Grand Hotel', cursive;
 }
 .mycard{
-  margin-top: 30px;
+  margin: 30px 10px;
 }
 
 .auth-card{
@@ -48,7 +48,7 @@ a{
   width: 30%;
 }
 .home{
-  
+  margin: 10px;
 }
 .home-card {
   max-width: 500px;
