@@ -2,6 +2,10 @@ import React, { useState, useEffect, useContext } from 'react'
 import ActivityIndicator from '../ActivityIndicator'
 import { UserContext } from '../../App'
 import M from 'materialize-css'
+import {Link} from 'react-router-dom'
+
+
+
 const Home = () => {
     const [data, setData] = useState([])
     const { state, dispatch } = useContext(UserContext)
@@ -153,7 +157,8 @@ const Home = () => {
                     return (
                         <div className="card home-card" key={item._id}>
                             <h5>
-                                {item.postedBy.name}
+                               <Link to={item.postedBy._id !== state._id ?`/profile/${item.postedBy._id}` : "/profile" }>{item.postedBy.name}</Link> 
+
                                 {
                                     item.postedBy._id == state._id &&
                                     <i className="material-icons icon-color"
