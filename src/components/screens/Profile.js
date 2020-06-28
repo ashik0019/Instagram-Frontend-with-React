@@ -39,7 +39,7 @@ const Profile = () => {
                 </div>
                 <div>
                     <h4>{state? state.name : 'Loading..'}</h4>
-                    {/* <h6>{state.email}</h6> */}
+                    <h6>{state? state.email : 'Loading..'}</h6>
                     <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
                         <h6>{data.length} Posts &nbsp;</h6>
                         <h6>{state ? state.followers.length : ''} Followers &nbsp;</h6>
